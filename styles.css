@@ -1,0 +1,28 @@
+/* Custom CSS to complement Tailwind */
+body {
+    /* Optional: Add a custom background pattern or other body-wide styles here */
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Simple animation for the navigation links on hover */
+.navigation a {
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #3b82f6; /* A slightly lighter blue on hover */
+}
+
+/* Custom styles for the image gallery section */
+#work .image-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#work .image-card:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}

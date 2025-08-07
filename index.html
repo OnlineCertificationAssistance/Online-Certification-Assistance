@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Certification Assistance</title>
+    <!-- Use Tailwind CSS from a CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link to the new custom stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm fixed w-full z-10 top-0">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Updated section for the logo and website name -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- IMPORTANT: The placeholder image URL has been replaced with the path to your logo file -->
+                <img src="assets/images/logo.png" alt="Online Certification Assistance Logo" class="h-8">
+                <!-- IMPORTANT: Replace "Online Certification Assistance" with your actual business name -->
+                <span class="font-bold text-xl text-gray-800">Online Certification Assistance</span>
+            </a>
+            <div class="space-x-4">
+                <a href="#home" class="text-gray-600 hover:text-indigo-600">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-indigo-600">Services</a>
+                <a href="#work" class="text-gray-600 hover:text-indigo-600">Our Work</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-indigo-600">Testimonials</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section (Home) -->
+    <!-- The background image and blue overlay are now added here -->
+    <header id="home" class="relative min-h-screen flex items-center justify-center pt-16 bg-cover bg-center bg-no-repeat bg-[url('assets/images/background.jpg')]">
+        <!-- Semi-transparent blue overlay for better text readability -->
+        <div class="absolute inset-0 bg-indigo-600/70"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-5xl font-bold mb-4 text-white">Your Success, Our Priority</h1>
+            <p class="text-xl max-w-2xl mx-auto mb-8 text-white">
+                We provide expert help with your exams to ensure you achieve your academic goals.
+            </p>
+            <!-- IMPORTANT: Replace '1234567890' with your actual WhatsApp number, including country code -->
+            <a href="https://wa.me/12067056343?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20your%20exam%20help%20services."
+               target="_blank"
+               class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+                Hire Now
+            </a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Need help with your exam? We are here to help! Our team of professionals is dedicated to providing high-quality support to help you excel in your studies. We understand the pressure of exams and are committed to helping you succeed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                You can hire someone to help you with your exams, ensuring you have the support you need to perform your best. Our services are tailored to your specific needs.
+            </p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+                Learn More
+            </a>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="work" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-10">Our Work</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                Here is some of our previous work. The results speak for themselves.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- IMPORTANT: Replace these placeholder images with your actual images from the 'assets/images' folder -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="assets/images/work-image-1.jpg" alt="Proof of work" class="w-full h-auto object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="assets/images/work-image-2.jpg" alt="Proof of work" class="w-full h-auto object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="assets/images/work-image-3.jpg" alt="Proof of work" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="relative py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-10">Anonymous Testimonials</h2>
+            <!-- Testimonial Carousel -->
+            <div class="relative flex items-center justify-center">
+                <!-- Left Arrow Button -->
+                <button id="left-arrow" class="absolute left-0 z-10 p-2 ml-2 bg-white rounded-full shadow-md transition transform hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <!-- Carousel Container -->
+                <div id="testimonial-carousel" class="flex overflow-x-hidden scroll-smooth snap-x snap-mandatory space-x-6 p-4">
+                    <!-- Testimonial Card 1 -->
+                    <div class="min-w-[calc(100%-1.5rem)] md:min-w-[calc(50%-1.5rem)] lg:min-w-[calc(33.333%-1.5rem)] snap-start bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-lg text-gray-700 italic">"The support I received was excellent. They helped me get through a really tough exam. Highly recommend!"</p>
+                        <p class="mt-4 font-semibold text-gray-900">- Anonymous Student</p>
+                    </div>
+                    <!-- Testimonial Card 2 -->
+                    <div class="min-w-[calc(100%-1.5rem)] md:min-w-[calc(50%-1.5rem)] lg:min-w-[calc(33.333%-1.5rem)] snap-start bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-lg text-gray-700 italic">"Professional and reliable. The help was exactly what I needed to pass my class. Thank you!"</p>
+                        <p class="mt-4 font-semibold text-gray-900">- Anonymous Student</p>
+                    </div>
+                    <!-- Testimonial Card 3 -->
+                    <div class="min-w-[calc(100%-1.5rem)] md:min-w-[calc(50%-1.5rem)] lg:min-w-[calc(33.333%-1.5rem)] snap-start bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-lg text-gray-700 italic">"I was skeptical at first, but the results speak for themselves. This service is a game-changer."</p>
+                        <p class="mt-4 font-semibold text-gray-900">- Anonymous Student</p>
+                    </div>
+                    <!-- Testimonial Card 4 -->
+                    <div class="min-w-[calc(100%-1.5rem)] md:min-w-[calc(50%-1.5rem)] lg:min-w-[calc(33.333%-1.5rem)] snap-start bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-lg text-gray-700 italic">"I was so stressed about my final, but the team's expertise helped me feel confident and prepared. I aced it!"</p>
+                        <p class="mt-4 font-semibold text-gray-900">- Anonymous Student</p>
+                    </div>
+                    <!-- Testimonial Card 5 -->
+                    <div class="min-w-[calc(100%-1.5rem)] md:min-w-[calc(50%-1.5rem)] lg:min-w-[calc(33.333%-1.5rem)] snap-start bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-lg text-gray-700 italic">"Their service is worth every penny. The quality of support is unmatched, and they are incredibly responsive."</p>
+                        <p class="mt-4 font-semibold text-gray-900">- Anonymous Student</p>
+                    </div>
+                </div>
+                <!-- Right Arrow Button -->
+                <button id="right-arrow" class="absolute right-0 z-10 p-2 mr-2 bg-white rounded-full shadow-md transition transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-indigo-600 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8">
+                Ready to get started? Contact us through WhatsApp or Discord for bookings and live chat.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <!-- IMPORTANT: Replace '1234567890' with your actual WhatsApp number, including country code -->
+                <a href="https://wa.me/12067056343?text=I%20would%20like%20to%20get%20exam%20help."
+                   target="_blank"
+                   class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+                    Chat on WhatsApp
+                </a>
+                <!-- IMPORTANT: Replace the '#' with your actual Discord invite link -->
+                <a href="https://discord.gg/73M38F4qNK" target="_blank"
+                   class="inline-block bg-gray-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+                    Join our Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6">
+        <p>&copy; 2024 Online Certification Assistance. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to the new JavaScript file -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
